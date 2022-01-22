@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gcfslides/static/css/main.8ec32c13.css",
+    "main.js": "/gcfslides/static/js/main.96113903.js",
+    "static/js/787.6438073e.chunk.js": "/gcfslides/static/js/787.6438073e.chunk.js",
+    "index.html": "/gcfslides/index.html",
+    "main.8ec32c13.css.map": "/gcfslides/static/css/main.8ec32c13.css.map",
+    "main.96113903.js.map": "/gcfslides/static/js/main.96113903.js.map",
+    "787.6438073e.chunk.js.map": "/gcfslides/static/js/787.6438073e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ec32c13.css",
+    "static/js/main.96113903.js"
+  ]
+}
