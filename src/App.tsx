@@ -4,7 +4,7 @@ import Search from './Search';
 import Lyrics from './Lyrics';
 import Image from './Image';
 import { BaseSyntheticEvent, useState, MouseEventHandler} from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {HashRouter as Router, Route, Routes} from 'react-router-dom';
 import Snackbar from '@mui/material/Snackbar';
 import Alert  from '@mui/material/Alert';
 
@@ -44,7 +44,7 @@ function App() {
 
   function handleSearch() {
     setLoading(true);
-    fetch(`https://worship-slides-data.herokuapp.com/data?title=${songData.title}&author=${songData.author}`)
+    fetch(`https://gcf-worship-slides.herokuapp.com/data?title=${songData.title}&author=${songData.author}`)
       .then((response) => response.json())
       .then((data) => {
         setRawLyrics(data);
@@ -95,7 +95,7 @@ function App() {
 
      formData.append('title', songData['title']);
 
-     fetch('https://worship-slides-data.herokuapp.com/generate', {
+     fetch('https://gcf-worship-slides.herokuapp.com/generate', {
       method: 'POST',
       body: formData, 
      })
