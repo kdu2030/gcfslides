@@ -4,7 +4,7 @@ import Search from './Search';
 import Lyrics from './Lyrics';
 import Image from './Image';
 import { BaseSyntheticEvent, useState, MouseEventHandler} from 'react';
-import {HashRouter as Router, Route, Routes} from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import Snackbar from '@mui/material/Snackbar';
 import Alert  from '@mui/material/Alert';
 
