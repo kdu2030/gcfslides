@@ -44,7 +44,7 @@ function App() {
 
   function handleSearch() {
     setLoading(true);
-    fetch(`https://gcf-worship-slides.herokuapp.com/data?title=${songData.title}&author=${songData.author}`)
+    fetch(`https://worship-slides.onrender.com/data?title=${songData.title}&author=${songData.author}`)
       .then((response) => response.json())
       .then((data) => {
         setRawLyrics(data);
@@ -95,7 +95,7 @@ function App() {
 
      formData.append('title', songData['title']);
 
-     fetch('https://gcf-worship-slides.herokuapp.com/generate', {
+     fetch('https://worship-slides.onrender.com/generate', {
       method: 'POST',
       body: formData, 
      })
